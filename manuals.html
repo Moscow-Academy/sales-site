@@ -144,6 +144,17 @@ section.page{display:grid;gap:48px}
 .mbody h3{margin-top:12px}
 .mbody p{color:var(--fg)}
 .callout{font-weight:700;font-size:18px;background:var(--lime-soft);color:var(--lime-text);border-radius:14px;padding:16px 18px}
+.block{display:grid;gap:20px}
+.bhead{display:grid;gap:8px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:none}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 24px;position:relative}
+.steps li>div{display:grid;gap:6px;min-width:0}
+.steps li p{color:var(--muted)}
+.steps .num{width:44px;height:44px;border-radius:12px;background:var(--lime);color:var(--lime-ink);font:800 20px var(--display);display:grid;place-items:center}
+.outcome{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px}
+.gets{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.gets li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;font-size:17px}
+.gets li::before{content:"✓";width:26px;height:26px;border-radius:8px;background:var(--lime);color:var(--lime-ink);display:grid;place-items:center;font-weight:800;font-size:14px}
 footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);font-size:14px}
 footer .fgrid{display:grid;gap:16px}
 .contacts{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
@@ -271,6 +282,37 @@ footer .fgrid{display:grid;gap:16px}
     <article><h3>Работаем до результата</h3><p>Сопровождаем, пока вы не получите результат: настроенный трафик, запущенный продукт, монетизированный канал.</p></article>
     <article><h3>Вся информация остаётся у вас</h3><p>Передаём материалы, связки и инструкции, которые пригодятся в дальнейшей работе.</p></article>
     <article><h3>Чат и созвоны</h3><p>Есть общий чат и созвоны, где мы отвечаем на вопросы и разбираем вашу ситуацию.</p></article>
+  </div>
+  <div class="block">
+    <div class="bhead"><span class="eyebrow">Услуги</span><h2>Что входит в наставничество</h2><p class="lead">Наставничество — это индивидуальное сопровождение ученика на всём пути обучения, от первой консультации до самостоятельной работы.</p></div>
+    <div class="why">
+      <article><h3>Полное наставничество</h3><p>Ведём ученика по выбранному направлению от начала до конца программы: ставим задачи, проверяем выполнение и корректируем стратегию по ходу работы.</p></article>
+      <article><h3>Работа один на один</h3><p>Ученик работает напрямую с наставником, без посредников. Разбираем именно его ситуацию, цели и темп, а не общий сценарий для всех.</p></article>
+      <article><h3>Полный объём материалов</h3><p>Передаём все материалы программы: инструкции, связки, скрипты и шаблоны. Доступ к ним остаётся у ученика и после окончания обучения.</p></article>
+      <article><h3>Поддержка на связи</h3><p>Чат и созвоны каждый день с 8:00 до 22:00. Вопрос не откладывается до следующего занятия: отвечаем по ходу работы.</p></article>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="bhead"><span class="eyebrow">Как проходит обучение</span><h2>Пять этапов наставничества</h2><p class="lead">Обучение идёт последовательно. Каждый следующий этап начинается, когда ученик уверенно освоил предыдущий.</p></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h3>Введение в курс дела</h3><p>Знакомимся, обсуждаем цели, опыт и время, которое ученик готов уделять. Выбираем направление и составляем индивидуальный план обучения с понятными задачами на каждый этап.</p></div></li>
+      <li><span class="num">2</span><div><h3>Изучение информации</h3><p>Ученик получает материалы программы и разбирает их вместе с наставником: как устроена ниша, какие инструменты используются, где искать клиентов или аудиторию. Все непонятные моменты разбираем на созвонах.</p></div></li>
+      <li><span class="num">3</span><div><h3>Работа под руководством</h3><p>Ученик начинает работать на практике, а наставник сопровождает каждый шаг: проверяет действия, подсказывает решения и помогает не допускать типичных ошибок. Опыт ученик получает уже на этом этапе, на реальных задачах.</p></div></li>
+      <li><span class="num">4</span><div><h3>Разбор ошибок</h3><p>Вместе анализируем результаты: что сработало, что нет и почему. Ошибки не скрываем, а разбираем подробно, потому что именно на них строится понимание ниши.</p></div></li>
+      <li><span class="num">5</span><div><h3>Работа над ошибками</h3><p>Исправляем найденные ошибки, дорабатываем подход и закрепляем навык. На этом этапе ученик переходит к самостоятельной работе, а наставник остаётся на связи для контроля.</p></div></li>
+    </ol>
+  </div>
+
+  <div class="block outcome">
+    <div class="bhead"><span class="eyebrow">Итог</span><h2>Что получает ученик</h2></div>
+    <ul class="gets">
+      <li>Всю информацию и материалы, необходимые для выхода на результат в течение нескольких месяцев.</li>
+      <li>Практический опыт работы, полученный ещё во время наставничества, а не только теорию.</li>
+      <li>Понимание, что делать дальше и в каком направлении развиваться после окончания обучения.</li>
+      <li>Доступ к материалам программы и возможность обратиться к наставнику с вопросами.</li>
+    </ul>
+    <p class="note">Результат обучения зависит от вовлечённости ученика, затраченного времени и выполнения рекомендаций наставника. Мы предоставляем знания, инструменты и сопровождение, но не гарантируем конкретный уровень дохода. Условия, сроки и стоимость наставничества фиксируются до начала обучения.</p>
   </div>
   <div class="hours">
     <div><span class="eyebrow">На связи каждый день</span><div class="big">8:00 – 22:00</div><p class="lead">Отвечаем в чате и на созвонах с 8 утра до 10 вечера.</p></div>
